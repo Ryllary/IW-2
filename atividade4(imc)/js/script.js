@@ -3,7 +3,7 @@ function calcularIMC() {
     var altura = parseFloat(document.getElementById("altura").value);
     var peso = parseFloat(document.getElementById("peso").value);
 
-    if (altura > 0 && peso > 0) {
+    if (!isNaN(altura) && !isNaN(peso) && altura > 0 && peso > 0) {
         var imc = peso / (altura * altura);
 
         var resultado = "Seu IMC é: " + imc.toFixed(2) + "<br>";
@@ -14,6 +14,7 @@ function calcularIMC() {
         alert("Por favor, insira valores válidos para altura e peso.");
     }
 }
+
 function classificarIMC(sexo, imc) {
     if (sexo === "masculino") {
         return classificarMasculino(imc);
@@ -52,4 +53,8 @@ function classificarFeminino(imc) {
     } else {
         return "Obesidade grau 3";
     }
+}
+
+function recarregarPagina() {
+    window.location.reload();
 }
