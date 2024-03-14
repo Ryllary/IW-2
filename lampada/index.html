@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício lâmpada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    
+    <title>Exercício Lâmpada</title>
 </head>
 <body>
     <main>
-        <h1>teste</h1>
         <div>
-            <img src="img/desligada.jpg" alt="" id="lamp">
+            <img src="img/desligada.png" alt="Lâmpada desligada" id="lamp">
         </div>
+            
         <div>
-            <button id="ligar">LIGAR</button>
-            <button id="desligar">DESLIGAR</button>
-        </div>
+            <button id="ligar">LIGA</button>
+            <button id="desligar">DESLIGA</button>
+            <button id="inter">LIG/DESL</button>
+            <button id="limpaTudo">RESETAR</button>
+        </div>     
+        
+        <h2>Status:</h2>
+        <h3 id="texto">DESLIGADA</h3>
 
     </main>
     <script src="js/script.js"></script>

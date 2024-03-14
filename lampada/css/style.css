@@ -1,9 +1,35 @@
-header,
-main{
+header, main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #ffffff;
+    background-color: #D9C78F;
 }
-button{
-    width: 80px;
+button {
+    width: 120px;
+    font-family: 'arial';
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #402719;
+    color: #DDC477;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #865829;
+    color: #ffffff;
+}
+
+h1, h2, h3 {
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        color: #462F1B;
+        font-size: 300%;
+      
 }
