@@ -38,7 +38,6 @@ body{
     position: relative;
     z-index: 0;
     border-radius: 10px;
-    margin-left: 42%;
     margin-top: 2%;
 }
 
@@ -93,4 +92,13 @@ a{
     font-family: 'Libre Franklin', sans-serif;
     color: #fff;
 }
-    
+
+.align{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-family: 'Libre Franklin', sans-serif;
+    color: #fff;
+}
